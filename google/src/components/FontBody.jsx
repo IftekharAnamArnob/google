@@ -1,6 +1,11 @@
 import wallpaper from "../assets/Images/Sky-and-Moon-Dark-Wallpaper-for-Desktop-and-Laptop.jpg";
 import searchLabsIcon from "../assets/Images/Search labs.svg";
 import googleAppIcon from "../assets/Images/google_apps.svg";
+import SearchBar from "./SearchBar";
+import SearchIcon from "../assets/Images/magnifying-glass.png";
+import googleMike from "../assets/Images/Google_mike.jpg";
+import googleLense from "../assets/Images/Google_Lens_Icon.svg";
+
 
 const FontBody = () => {
   return (
@@ -53,6 +58,15 @@ const FontBody = () => {
       >
         Google
       </h1>
+      <SearchBar
+      iconLeft={SearchIcon}
+      iconRight={googleMike}
+      iconRightTwo={googleLense}
+
+        placeholder="Search Google or type a URL"
+        size="740px"
+        style="mt-5 py-0.5" // Decrease padding to make it thinner
+      />
     </div>
   );
 };
