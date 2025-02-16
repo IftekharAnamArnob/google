@@ -2,9 +2,13 @@ import wallpaper from "../assets/Images/Sky-and-Moon-Dark-Wallpaper-for-Desktop-
 import searchLabsIcon from "../assets/Images/Search labs.svg";
 import googleAppIcon from "../assets/Images/google_apps.svg";
 import SearchBar from "./SearchBar";
+import AppShortcut from "./AppShortcut";
 import SearchIcon from "../assets/Images/magnifying-glass.png";
 import googleMike from "../assets/Images/Google_mike.jpg";
 import googleLense from "../assets/Images/Google_Lens_Icon.svg";
+import Gpt from "../assets/Images/shortcuts_icon/gpt.svg"; 
+import Gmail from "../assets/Images/shortcuts_icon/Gmail.svg"; 
+import Youtube from "../assets/Images/shortcuts_icon/youtube.png";
 
 
 const FontBody = () => {
@@ -67,7 +71,22 @@ const FontBody = () => {
         size="740px"
         style="mt-5 py-0.5" // Decrease padding to make it thinner
       />
+    
+     {/* Shortcut Icons Section */}
+     <div className="mt-10 flex space-x-6">
+        <AppShortcut image={Gpt} url="https://chat.openai.com/" />
+        <AppShortcut image={Youtube} url="https://www.youtube.com/" />
+        <AppShortcut image={Gmail} url="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" />
+      </div>
+
+
+
     </div>
+     
+     
+
+
+
   );
 };
 
