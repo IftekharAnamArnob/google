@@ -10,7 +10,7 @@ import Gpt from "../assets/Images/shortcuts_icon/gpt.svg";
 import Gmail from "../assets/Images/shortcuts_icon/Gmail.svg"; 
 import Youtube from "../assets/Images/shortcuts_icon/youtube.png";
 import DeepSeek from "../assets/Images/shortcuts_icon/deepseek-logo-icon.png";
-
+import Torrent from "../assets/Images/shortcuts_icon/Torrent.png";
 
 const FontBody = () => {
   return (
@@ -79,6 +79,7 @@ const FontBody = () => {
         <AppShortcut image={Youtube} url="https://www.youtube.com/" label="Youtube" />
         <AppShortcut image={Gmail} url="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" label="Gmail" />
         <AppShortcut image={DeepSeek} url="https://deepseek.com/" label="DeepSeek" />
+        <AppShortcut image={Torrent} url="https://www.torrentbd.net/" label="Torrent" />
       </div>
 
 
