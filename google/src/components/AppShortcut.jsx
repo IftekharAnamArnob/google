@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const AppShortcut = ({ image, size = "60px", url }) => {
+const AppShortcut = ({ image, size = "60px", url, label }) => {
     return (
+        <div className="flex flex-col items-center">
         <a href={url} target="_blank" rel="noopener noreferrer">
           <div
             className="relative flex items-center justify-center rounded-full bg-[#87CEEB] justify-center transition duration-300 ease-in-out 
@@ -18,6 +19,11 @@ const AppShortcut = ({ image, size = "60px", url }) => {
             </div>
           </div>
         </a>
+        {label && (
+        <span className="mt-2 text-white text-sm text-center">{label}</span>
+      )}
+    </div>
+
       );
       
       
@@ -27,6 +33,7 @@ AppShortcut.propTypes = {
   image: PropTypes.string.isRequired,
   size: PropTypes.string,
   url: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
 };
 
 

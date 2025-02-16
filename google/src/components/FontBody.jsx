@@ -9,6 +9,7 @@ import googleLense from "../assets/Images/Google_Lens_Icon.svg";
 import Gpt from "../assets/Images/shortcuts_icon/gpt.svg"; 
 import Gmail from "../assets/Images/shortcuts_icon/Gmail.svg"; 
 import Youtube from "../assets/Images/shortcuts_icon/youtube.png";
+import DeepSeek from "../assets/Images/shortcuts_icon/deepseek-logo-icon.png";
 
 
 const FontBody = () => {
@@ -74,9 +75,10 @@ const FontBody = () => {
     
      {/* Shortcut Icons Section */}
      <div className="mt-10 flex space-x-6">
-        <AppShortcut image={Gpt} url="https://chat.openai.com/" />
-        <AppShortcut image={Youtube} url="https://www.youtube.com/" />
-        <AppShortcut image={Gmail} url="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" />
+        <AppShortcut image={Gpt} url="https://chat.openai.com/"  label="ChatGPT"  />
+        <AppShortcut image={Youtube} url="https://www.youtube.com/" label="Youtube" />
+        <AppShortcut image={Gmail} url="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" label="Gmail" />
+        <AppShortcut image={DeepSeek} url="https://deepseek.com/" label="DeepSeek" />
       </div>
 
 
